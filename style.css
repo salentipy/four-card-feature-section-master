@@ -1,0 +1,109 @@
+/** @format */
+
+:root {
+	--red: #ea5454;
+	--teal: #44d3d2;
+	--yellow: #fcae4a;
+	--blue: #549ef2;
+	--dk-blue: #4d4f62;
+	--white: #ffffff;
+
+	--font: "Poppins", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body {
+	font-family: var(--font);
+	font-size: 0.938rem;
+	margin: 0;
+	padding: 0;
+	background-color: var(--white);
+	color: var(--dk-blue);
+}
+h1,
+h2,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 5rem auto;
+	padding: 0.625rem 1.25rem;
+}
+.header {
+	text-align: center;
+	font-weight: 200;
+	margin: 0 auto;
+	max-width: 31.25rem;
+	min-width: 19.438rem;
+}
+.h1 {
+	line-height: 2rem;
+}
+.h1-light {
+	font-weight: 200;
+	font-size: 1.5rem;
+}
+.main {
+	margin: 0 auto 3.125rem auto;
+	max-width: 31.25rem;
+	justify-self: center;
+}
+.card {
+	border-radius: 0.5rem;
+	min-width: 19.438rem;
+	max-width: 21.875rem;
+	height: 13.875rem;
+	box-shadow: 0 0.938rem 1.875rem -0.6888rem #979797;
+	margin: 1.563rem auto;
+	padding: 1.688rem;
+	font-weight: 200;
+	position: relative;
+}
+.card img {
+	position: absolute;
+	right: 1.25rem;
+	bottom: 1.25rem;
+}
+.icon {
+	width: 3.563rem;
+	height: 3.563rem;
+}
+.teal {
+	border-top: 0.25rem solid var(--teal);
+}
+.red {
+	border-top: 0.25rem solid var(--red);
+}
+.yellow {
+	border-top: 0.25rem solid var(--yellow);
+}
+.blue {
+	border-top: 0.25rem solid var(--blue);
+}
+.attribution {
+	font-size: 0.6888rem;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1000px) and (max-width: 1440px) {
+	.main {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.card {
+		margin: 0.938rem;
+	}
+	.two {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
